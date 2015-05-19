@@ -1,0 +1,26 @@
+{
+  "name": "morlock",
+  "version": "0.4.2",
+  "description": "Low level libraries for responsive & interactive websites",
+  "main": "dist/morlock.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "_*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "demos",
+    "karma.conf.js",
+    "package.json",
+    "webpack.config.js"
+  ],
+  "keywords": [
+    "responsive",
+    "functional",
+    "streams"
+  ],
+  "author": "Thomas Reynolds",
+  "license": "MIT"
+}

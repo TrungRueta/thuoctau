@@ -1,0 +1,13 @@
+{
+  "name": "jkit",
+  "_cacheHeaders": {
+    "ETag": "\"2e8f69-4dc5d80187b80\"",
+    "Last-Modified": "Fri, 10 May 2013 13:54:06 GMT",
+    "Content-Length": "3051369",
+    "Content-Type": "application/x-gzip"
+  },
+  "_release": "e-tag:2e8f69-4d",
+  "_source": "http://jquery-jkit.com/jquery.jkit.1.2.16.tar.gz",
+  "_target": "*",
+  "_originalSource": "http://jquery-jkit.com/jquery.jkit.1.2.16.tar.gz"
+}

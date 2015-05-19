@@ -1,0 +1,21 @@
+#! /usr/bin/env php
+
+<?php
+
+
+use Ionize\CLI\Commands\AsseticCommand;
+use Ionize\CLI\Commands\DatabaseMigrateCommand;
+use Ionize\CLI\Commands\DatabaseSeedCommand;
+use Symfony\Component\Console\Application;
+use Ionize\CLI\Commands\DatabaseImportCommand;
+
+require 'vendor/autoload.php';
+
+$app = new Application('Ionize CLI', '1.0');
+
+$app->add(new DatabaseImportCommand());
+$app->add(new DatabaseSeedCommand());
+$app->add(new DatabaseMigrateCommand());
+$app->add(new AsseticCommand());
+
+$app->run();

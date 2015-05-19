@@ -1,0 +1,108 @@
+@import "../../../uxui/lesshat/build/lesshat";
+//@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,700);
+
+@font-dosis: 'Dosis', sans-serif;
+@font-opensan: 'Open Sans', sans-serif;
+
+// bootstrap color
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+//@color-mainTone: #4b459c;
+@color-mainTone: #0c5396;
+@color-textTone: lighten(@color-mainTone, 40%);
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
+
+
+//font
+//@font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+@font-family: 'Open Sans', Arial, sans-serif;
+@font-line-height: 120%; // font-size = 100%;
+@font-size: 100%;
+@font-color: @color-textTone;
+
+// custom var
+@header-height : 60px;
+@thumbnail-width : 250px;
+@container-padding: 25px;
+@container-padding2Side: @container-padding * 2;
+
+@color-white: #ffffff;
+@color-darkTone: #0064c2;
+@color-saturateTone: #0060bb;
+@color-cherry: #6C0051;
+@color-dark: #2b2b2b;
+@color-darkText: #444444;
+@color-greyText: lighten(@color-darkText, 30%);
+@color-darkest: #262626;
+@color-green-bananar: #18bc9c; //18bc9c
+@color-green-bananar-dark: darken(@color-green-bananar, 4%); //15a589
+@color-purple: #55518a;
+@color-asb-superlight : #F1F3FA;
+
+@color-grey: #DEE0E5;
+@color-head-tab-bg: #d5e9fc;
+@color-asb-light: #8ca6bf;
+
+// bootstrap re-config
+@max-container-width: 1040px;
+@color-body-bg : desaturate(lighten(@color-asb-superlight, 1%), 15%);
+@color-greylight : darken(white, 3%);
+
+@color-nearlywhite : #f8f9fd;
+
+
+@import "mix/font";
+@import "mix/border";
+@import "mix/button";
+@import "mix/box";
+@import "mix/spacing";
+
+@import "common";
+@import "landing";
+@import "tobacco";

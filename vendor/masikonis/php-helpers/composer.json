@@ -1,0 +1,19 @@
+{
+    "name": "masikonis/php-helpers",
+    "type": "helpers",
+    "description": "Various reusable PHP helpers.",
+    "keywords": ["php", "helpers"],
+    "homepage": "https://github.com/masikonis/php-helpers",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nerijus Masikonis",
+            "email": "nerijus@masikonis.lt",
+            "homepage": "http://www.masikonis.lt/",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "files": ["src/helpers.php"]
+    }
+}

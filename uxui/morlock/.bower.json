@@ -1,0 +1,36 @@
+{
+  "name": "morlock",
+  "version": "0.4.2",
+  "description": "Low level libraries for responsive & interactive websites",
+  "main": "dist/morlock.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "ignore": [
+    "**/.*",
+    "_*",
+    "node_modules",
+    "bower_components",
+    "tests",
+    "demos",
+    "karma.conf.js",
+    "package.json",
+    "webpack.config.js"
+  ],
+  "keywords": [
+    "responsive",
+    "functional",
+    "streams"
+  ],
+  "author": "Thomas Reynolds",
+  "license": "MIT",
+  "homepage": "https://github.com/tdreyno/morlock.js",
+  "_release": "0.4.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.2",
+    "commit": "58c3c5dea40a8d87bc4fd76f1346b942764cb743"
+  },
+  "_source": "git://github.com/tdreyno/morlock.js.git",
+  "_target": "*",
+  "_originalSource": "morlock"
+}

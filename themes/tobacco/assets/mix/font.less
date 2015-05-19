@@ -1,0 +1,169 @@
+@em-normal : 1em;
+@em-double : 2em;
+@em-double-half : 1.5em;
+@em-tripe : 3em;
+@em-tripe-half: 2.5em;
+
+// font responsive
+.font-responsive {
+  font-size: 12px;
+  @media (min-width: @screen-md) {
+    font-size: 13px;
+  }
+  @media (min-width: @screen-lg) {
+    font-size: 14px;
+  }
+}
+
+// common class
+.font-base {
+  font-family: @font-family;
+  line-height: @font-line-height;
+  font-size: @font-size;
+  font-weight: normal;
+  color: @font-color;
+}
+.font-bold {
+  font-weight: bold;
+}
+.font-slim {
+  font-weight: 200;
+}
+.font-normal {
+  font-weight: normal;
+}
+
+
+// text style
+.text-upper {
+  text-transform: uppercase;
+}
+.text-lower {
+  text-transform: lowercase;
+}
+.text-cap {
+  text-transform: capitalize;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-smooth-antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.text-smooth-subpixel {
+  -webkit-font-smoothing: sub-pixel;
+  -moz-osx-font-smoothing: grayscale;
+}
+.text-slim {
+  font-weight: 200;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-normal {
+  font-weight: normal;
+}
+.text-normal-smooth {
+  .text-smooth-antialiased;
+  font-weight: 500;
+}
+
+// color text
+.text-white {
+  color: white;
+}
+.text-grey {
+  color: #808080;
+}
+.text-black {
+  color: black;
+}
+
+.text-em-normal {
+  font-size: @em-normal;
+}
+.text-em-double {
+  font-size: @em-double;
+}
+.text-em-double-half {
+  font-size: @em-double-half;
+}
+.text-em-tripe {
+  font-size: @em-tripe;
+}
+.text-em-tripe-half {
+  font-size: @em-tripe-half;
+}
+
+.text-xs {
+  font-size: @em-normal - 0.25em;
+}
+.text-sm {
+  font-size: @em-normal - 0.2em;
+}
+.text-md {
+  font-size: @em-normal - 0.1em;
+}
+.text-lg {
+  font-size: @em-double-half;
+}
+.text-supper {
+  font-size: @em-tripe * 2;
+}
+
+.text-spin{
+  -webkit-transform-origin: 50% 50%;
+  transform-origin:50% 50%;
+  -ms-transform-origin:50% 50%; /* IE 9 */
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-semi {
+  font-size: @em-normal - 0.1em;
+}
+
+.text-no-decoration {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}

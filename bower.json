@@ -1,0 +1,22 @@
+{
+  "name": "rueta",
+  "authors": [
+    "Beelab <info@bee-lab.net>",
+    "Trung Le Vu Tran <trungrueta@icloud.com>"
+  ],
+  "private": true,
+  "dependencies": {
+    "jquery": "*",
+    "less.js": "*",
+    "modernizr": "*",
+    "underscore": "*",
+    "backbone": "*",
+    "backbone.mutators": "*",
+    "bootstrap": "*",
+    "font-awesome": "*",
+    "lodash": "*",
+    "morlock": "*",
+    "lesshat": "*",
+    "jkit": "http://jquery-jkit.com/jquery.jkit.1.2.16.tar.gz"
+  }
+}

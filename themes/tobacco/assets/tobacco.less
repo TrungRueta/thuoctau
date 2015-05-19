@@ -1,0 +1,54 @@
+#tobacco {
+  @height-side : 300px;
+
+  .btn-back-tobacco-list {
+    position: fixed;
+    top: 10px;
+    left: 15px;
+    z-index: 1030;
+  }
+
+  .tobacco-side {
+    float: none;
+    //margin-left: -1 * @height-side;
+    width: 100%;
+    max-width: 700px;
+    margin:0 auto;
+    text-align: center;
+
+    @media (min-width: @screen-md) {
+      width: @height-side;
+      float: left;
+      min-height: 400px;
+      max-width: none;
+      margin:0;
+      text-align: left;
+    }
+
+  }
+
+  .tobacco-main {
+    padding-left: 0;
+    > div {
+      min-height: @height-side;
+      float: none;
+      width: 100%;
+      background-color: white;
+    }
+
+    .tobacco-main-inner {
+      margin: 0 auto;
+    }
+
+    @media (min-width: @screen-md) {
+      padding-left: @height-side;
+      > div {
+        float: left;
+      }
+      .tobacco-main-inner {
+        margin: 0;
+      }
+    }
+  }
+
+}

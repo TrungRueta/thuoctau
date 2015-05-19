@@ -1,0 +1,19 @@
+{
+  "name": "Backbone.Mutators",
+  "version": "0.4.5",
+  "main": "backbone.mutators.js",
+  "dependencies": {
+    "underscore": ">=1.4.4",
+    "backbone": ">=1.0.0"
+  },
+  "homepage": "https://github.com/asciidisco/Backbone.Mutators",
+  "_release": "0.4.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.4.5",
+    "commit": "5904951500d12e68741611f95764ed7a785c9fec"
+  },
+  "_source": "git://github.com/asciidisco/Backbone.Mutators.git",
+  "_target": "*",
+  "_originalSource": "backbone.mutators"
+}

@@ -1,0 +1,90 @@
+@color-asb: @color-saturateTone; //#0c5396
+
+.btn {
+  .transition(border-color 0.1s linear, background-color 0.1s linear);
+  &.btn-asb {
+    background-color: @color-asb;
+    border-color: darken(@color-asb, 5%);
+    &:hover {
+      background-color: lighten(saturate(@color-asb, 20%), 5%);
+      border-color: saturate(@color-asb, 5%);
+    }
+    color: white;
+  }
+
+  // hard corner button
+  &.btn-lessRounded {
+    border-radius: 2px;
+  }
+
+  &.btn-upload {
+    position: relative;
+    cursor: pointer;
+    input[type=file] {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  // clear style
+  &.btn-clear {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: transparent;
+    color: #808080;
+    background-color: transparent;
+    .text-smooth-antialiased;
+    &:hover {
+      .box-shadow(0 1px 5px fade(black, 10%));
+      background-color: transparent;
+      color: darken(#808080, 10%);
+      border-bottom-color: darken(#808080, 10%);
+    }
+
+    &.btn-success {
+      &:hover {
+        color: @green;
+        border-bottom-color: @green;
+      }
+    }
+
+    &.btn-danger {
+      &:hover {
+        color: @red;
+        border-bottom-color: @red;
+      }
+    }
+
+    &.btn-info {
+      &:hover {
+        color: @blueDark;
+        border-bottom-color: @blueDark;
+      }
+    }
+
+    &.btn-warning {
+      &:hover {
+        color: @orange;
+        border-bottom-color: @orange;
+      }
+    }
+  }
+}
+
+.btn-peter {
+  background-color: #3498db;
+  color: white;
+  &:hover {
+    background-color: lighten(#3498db, 10%);
+    color: white;
+  }
+}
