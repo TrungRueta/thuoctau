@@ -1,12 +1,13 @@
 language: php
-# compiler:
-#  - "5.5"
+compiler:
+  - "5.5"
 # Change this to your needs
-# script: ./configure && make
+script:
 
 env:
   global:
     - "FTP_USER=rueta"
     - "FTP_PASSWORD=ivanovki"
-after_success:
+# after_success:
+before_script:
     "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftps2.50webs.com/pipetobacco.50webs.com"
