@@ -2,7 +2,7 @@ language: php
 compiler:
   - "5.5"
 # Change this to your needs
-script: ./configure && make
+# script: ./configure && make
 
 env:
   global:
