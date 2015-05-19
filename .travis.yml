@@ -10,4 +10,4 @@ env:
     - "FTP_PASSWORD=ivanovki"
 # after_success:
 before_script:
-    "curl --ftp-create-dirs -T uploadfilename -u $FTP_USER:$FTP_PASSWORD ftps2.50webs.com/pipetobacco.50webs.com"
+    "curl -u $FTP_USER:$FTP_PASSWORD ftps2.50webs.com/pipetobacco.50webs.com"
